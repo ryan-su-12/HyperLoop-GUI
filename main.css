@@ -30,11 +30,11 @@ body {
   background-color: #4682B4;
 }
 
-.row1 > div {
+.row1 > * {
   float: left;
   margin: 25px;
-  width: 31%;
-  height: 1000px;
+  width: 30%;
+  height: 400px;
   border: 5px solid #000;
   box-sizing: border-box;
   border-radius: 50px;
@@ -47,15 +47,15 @@ body {
   text-transform: uppercase;
 }
 
-.TestCase {
+a > .TestCase {
   background-color: #FFD700;
 }
 
-.MechSubsys {
+a > .MechSubsys {
   background-color: #8B0000;
 }
 
-.ElecSubsys {
+a > .ElecSubsys {
   background-color: #8B0000;
 }
 
@@ -66,7 +66,7 @@ body {
   font-weight: bold;
 }
 
-.row2 > div {
+.row2 > * {
   float: left;
   width: 22.5%;
   margin: 25px;
