@@ -1,0 +1,12 @@
+body {
+    font-size: 16px;
+    color: white;
+    background-color: #040720;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .nav-header {
+    background-color: #040720;
+    border-radius: 0;
+    border: 0;
+  }
