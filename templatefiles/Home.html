@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queen's Hyperloop Homepage</title>
-    <link rel="stylesheet" href="HomeStyles.css">
+    <title>Queen's Hyperloop Dashboard</title>
+    <link rel="stylesheet" href="staticFiles/main.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
             <div class="container-fluid">
               <div class="navbar-header">
                 <a href="Home.html">
-                  <img class="logo-img" src="logo.png" alt="Logo Image">
+                  <img class="logo-img" src="img/logo.png" alt="Logo Image">
                 </a>
               </div>
             </div>
@@ -22,17 +22,17 @@
     </header>
 
     <div class="container-fluid">
-      <a href="Dashboard.html">
+      <a href="{{ url_for('Mechanical_Subsystem') }}" title="Go to Dashboard">
         <button class="Dashboard">Dashboard</button>
       </a>
       <div class="row1">
-        <a href="TestCases.html">
-          <button class="TestCase">Test Cases</button> 
+        <a href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">
+          <button class="Data">Input Cases</button> 
         </a>
-        <a href="Mechanical.html">
+        <a href="{{ url_for('Mechanical_Subsystem') }}" title="Go to Mechanical Subystems">
           <button class="MechSubsys">Mechanical Subsystem</button>
         </a>
-        <a href="Electrical.html">
+        <a href="{{ url_for('Electrical_Subsystem') }}" title="Go to Electrical Subsystems">
           <button class="ElecSubsys">Electrical Subsystem</button>
         </a>
       </div>
