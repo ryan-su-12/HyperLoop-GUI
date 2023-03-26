@@ -38,14 +38,26 @@ button {
   text-transform: uppercase;
 }
 
-a > .Data {
+.Data button{
   background-color: #FFD700;
 }
 
-a > .MechSubsys {
+.MechSubsys button{
   background-color: #8B0000;
 }
 
-a > .ElecSubsys {
+.ElecSubsys button{
   background-color: #8B0000;
+}
+
+.Data button:hover{
+  background-color: #ffbf00;
+}
+
+.MechSubsys button:hover{
+  background-color: #8b1900;
+}
+
+.ElecSubsys button:hover{
+  background-color: #8b1900;
 }

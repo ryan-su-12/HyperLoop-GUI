@@ -16,15 +16,15 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row1">
-        <a href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">
-          <button class="ButtonArea Data">Input Cases</button> 
+      <div class="row">
+        <a class="Data" href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">
+          <button class="ButtonArea">Input Cases</button> 
         </a>
-        <a href="{{ url_for('Mechanical_Subsystem') }}" title="Go to Mechanical Subystems">
-          <button class="ButtonArea MechSubsys">Mechanical Subsystem</button>
+        <a class="MechSubsys" href="{{ url_for('Mechanical_Subsystem') }}" title="Go to Mechanical Subystems">
+          <button class="ButtonArea">Mechanical Subsystem</button>
         </a>
-        <a href="{{ url_for('Electrical_Subsystem') }}" title="Go to Electrical Subsystems">
-          <button class="ButtonArea ElecSubsys">Electrical Subsystem</button>
+        <a class="ElecSubsys" href="{{ url_for('Electrical_Subsystem') }}" title="Go to Electrical Subsystems">
+          <button class="ButtonArea">Electrical Subsystem</button>
         </a>
       </div>
     </div>

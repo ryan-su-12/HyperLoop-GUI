@@ -20,3 +20,42 @@ body {
   height: auto;
   align-items: center;
 }
+
+.Header {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.Column {
+  float: left;
+  width: 30vw;
+  height: 60vh;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: #8B0000;
+}
+
+form {
+  text-align: right;
+}
+
+input {
+  width: 20vw;
+  padding: 5px 5px;
+  margin: 5px 0;
+}
+
+.SubmitButton {
+  text-align: center;
+  width: 25vw;
+  margin: 1vw;
+}
+
+

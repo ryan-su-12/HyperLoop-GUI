@@ -13,12 +13,41 @@
           <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
         </a>
       </div>
-
-    <form action="/data" method = "POST">
-        <p>Velocity <input type = "text" name = "Velocity" /></p>
-        <p>Time <input type = "text" name = "Time" /></p>
-        <p>Acceleration <input type = "text" name = "Acceleration" /></p>
-        <p><input type = "submit" value = "Submit" /></p>
-    </form> 
+    
+    <div>
+      <div class="row">
+        <div class="Column">
+          <div class="Header">Basic Data</div>
+          <form action="/data" method = "POST">
+              <p>Time <input type = "text" name = "Time" /></p>
+              <p>Velocity <input type = "text" name = "Velocity" /></p>
+              <p>Acceleration <input type = "text" name = "Acceleration" /></p>
+              <p>Distance <input type = "text" name = "Time" /></p>
+              <p>Temperature  <input type = "text" name = "Time" /></p>
+          </form>
+        </div>
+        <div class="Column">
+          <div class="Header">Mechanical Data</div>
+          <form action="/data" method = "POST">
+              <p>Time <input type = "text" name = "Time" /></p>
+              <p>Velocity <input type = "text" name = "Velocity" /></p>
+              <p>Acceleration <input type = "text" name = "Acceleration" /></p>
+              <p>Distance <input type = "text" name = "Time" /></p>
+              <p>Temperature  <input type = "text" name = "Time" /></p>
+              <p><input class="SubmitButton" type = "submit" value = "Submit" /></p>
+          </form>
+        </div>
+        <div class="Column">
+          <div class="Header">Electrical Data</div>
+          <form action="/data" method = "POST">
+              <p>Time <input type = "text" name = "Time" /></p>
+              <p>Velocity <input type = "text" name = "Velocity" /></p>
+              <p>Acceleration <input type = "text" name = "Acceleration" /></p>
+              <p>Distance <input type = "text" name = "Time" /></p>
+              <p>Temperature  <input type = "text" name = "Time" /></p>
+          </form>
+        </div>
+      </div>  
+    </div>
 </body>
 </html> 
