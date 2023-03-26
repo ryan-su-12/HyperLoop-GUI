@@ -8,19 +8,9 @@ def home():
     
     return render_template('Home.html', variable = form_data.get('Velocity'))
 
-       
-
 @app.route('/Electrical_Subsystem/')
 def Electrical_Subsystem():
     return form_data
-
-@app.route('/Velocity/')
-def Velocity():
-    return render_template('Velocity.html')
-
-@app.route('/Temperatures/')
-def Temperatures():
-    return render_template('Temperatures.html')
 
 @app.route('/Mechanical_Subsystem/')
 def Mechanical_Subsystem():
