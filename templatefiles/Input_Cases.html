@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="/staticFiles/inputs.css">
 </head> 
 <body>
+    <div class="navigation">
+        <a href="/">
+          <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
+        </a>
+      </div>
 
     <form action="/data" method = "POST">
         <p>Velocity <input type = "text" name = "Velocity" /></p>
