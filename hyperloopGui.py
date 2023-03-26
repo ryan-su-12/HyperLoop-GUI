@@ -10,7 +10,7 @@ def home():
 
 @app.route('/Electrical_Subsystem/')
 def Electrical_Subsystem():
-    return form_data
+    return render_template('Electrical_Subsystems.html', variable = form_data.get('Velocity'))
 
 @app.route('/Mechanical_Subsystem/')
 def Mechanical_Subsystem():

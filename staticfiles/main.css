@@ -11,6 +11,12 @@ body {
   border: 0;
 }
 
+.logo-img {
+  width: 600px;
+  height: 100px;
+  align-items: center;
+}
+
 .Dashboard{
   margin: 25px;
   width: 98%;
