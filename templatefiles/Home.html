@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Queen's Hyperloop Homepage</title>
   <link rel="stylesheet" href="/staticFiles/main.css">
+  <script src="dynamicTime.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
       </a>
     </div>
-
+    <p id="time"></p>
     <div class="container-fluid">
       <div class="row">
         <a class="Data" href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">
