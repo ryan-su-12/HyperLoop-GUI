@@ -4,6 +4,9 @@ body {
   background-color: #040720;
   font-family: Helvetica, sans-serif;
 }
+p {
+  color: white;
+}
 * {
   box-sizing: border-box;
 }
