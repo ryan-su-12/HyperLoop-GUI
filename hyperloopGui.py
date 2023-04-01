@@ -29,6 +29,5 @@ def data():
         return redirect(url_for('home')), form_data
 
  
-#<Hello> 
 if __name__=='__main__':
     app.run()
