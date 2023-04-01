@@ -10,7 +10,7 @@ def home():
 
 @app.route('/Electrical_Subsystem/')
 def Electrical_Subsystem():
-    return render_template('Electrical_Subsystems.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'))
+    return render_template('clocktest.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'))
 
 @app.route('/Mechanical_Subsystem/')
 def Mechanical_Subsystem():
