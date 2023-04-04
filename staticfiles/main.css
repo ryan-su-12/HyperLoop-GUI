@@ -13,9 +13,16 @@ p {
 }
 
 .navigation {
-  width: 100%;
+  width: 90%;
   height: 20vh;
   text-align: center;
+}
+
+.clock {
+  width: 5%;
+  height: 20vh;
+  text-align: center;
+  vertical-align: top;
 }
 
 .logo-img {
