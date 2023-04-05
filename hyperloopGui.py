@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__, template_folder='templateFiles', static_folder='staticFiles')
-form_data = {'Velocity':0,'Acceleration':0,'Time': 0}
+form_data = {'Velocity':0,'Acceleration':0,'Time': 0, 'DistanceTravelled':0, 'BatteryPercentage':0}
 
 @app.route('/')
 def home():
