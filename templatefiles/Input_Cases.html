@@ -16,37 +16,31 @@
     
     <div>
       <div class="row">
+        <form action="/data" method = "POST">
         <div class="Column">
           <div class="Header">Basic Data</div>
-          <form action="/data" method = "POST">
               <p>Time <input type = "text" name = "Time" /></p>
               <p>Velocity <input type = "text" name = "Velocity" /></p>
               <p>Acceleration <input type = "text" name = "Acceleration" /></p>
-              <p>Distance <input type = "text" name = "Time" /></p>
-              <p>Temperature  <input type = "text" name = "Time" /></p>
-          </form>
+              <p>Distance <input type = "text" name = "DistanceTravelled" /></p>
         </div>
         <div class="Column">
           <div class="Header">Mechanical Data</div>
-          <form action="/data" method = "POST">
-              <p>Time <input type = "text" name = "Time" /></p>
-              <p>Velocity <input type = "text" name = "Velocity" /></p>
-              <p>Acceleration <input type = "text" name = "Acceleration" /></p>
-              <p>Distance <input type = "text" name = "Time" /></p>
-              <p>Temperature  <input type = "text" name = "Time" /></p>
-              <p><input class="SubmitButton" type = "submit" value = "Submit" /></p>
-          </form>
+              <p>Throttle <input type = "text" name = "Time" /></p>
+              <p>Height <input type = "text" name = "Velocity" /></p>
+              <p>Motor Temp<input type = "text" name = "Acceleration" /></p>
+              <p>Brake % <input type = "text" name = "Time" /></p>
+              
         </div>
         <div class="Column">
           <div class="Header">Electrical Data</div>
-          <form action="/data" method = "POST">
-              <p>Time <input type = "text" name = "Time" /></p>
-              <p>Velocity <input type = "text" name = "Velocity" /></p>
-              <p>Acceleration <input type = "text" name = "Acceleration" /></p>
-              <p>Distance <input type = "text" name = "Time" /></p>
-              <p>Temperature  <input type = "text" name = "Time" /></p>
-          </form>
+              <p>Battery Temp<input type = "text" name = "BatteryTemperature" /></p>
+              <p>Current <input type = "text" name = "Current" /></p>
+              <p>Voltage <input type = "text" name = "Voltage" /></p>
+              <p>Battery % <input type = "text" name = "BatteryPercentage" /></p>
         </div>
+        <p><input class="SubmitButton" type = "submit" value = "Submit"/></p>
+        </form>
       </div>  
     </div>
 </body>

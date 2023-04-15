@@ -12,14 +12,11 @@
 <body>
     <div class="navigation">
         <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
-        <p id="time"></p>
-       <div class="clock"></div>
+        <div class="clock">
+          <p id="time"></p>
+        </div> 
     </div>
     
-      
-    </div>
-    
-  </body>
     <div class="container-fluid">
       <div class="row">
         <a class="Data" href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">

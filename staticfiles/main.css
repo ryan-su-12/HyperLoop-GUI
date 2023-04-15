@@ -66,3 +66,7 @@ button {
 .ElecSubsys button:hover{
   background-color: #8b1900;
 }
+
+.clock {
+  float: right;
+}

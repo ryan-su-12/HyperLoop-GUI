@@ -14,12 +14,23 @@
       <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
     </a>
   </div>
-  
-  <div class="leftdiv">Battery Percentage</div>
-  <div class="rightdiv">Battery Temperature</div>
-  <div class="leftdiv">Current</div>
-  <div class="rightdiv">Voltage</div>
-  
 
+  <div class="container-fluid">
+    <div class="box">
+      <h1>Electrical Subsystem</h1>
+
+      <div class="row">
+        <div class="Column">
+          <div class="Data"> Battery Percentage: {{  BatteryPercentData  }} m/s</div>
+          <div class="Data"> Battery Temperature: {{  BatteryTemperatureData  }} m/s^2</div>
+          <div class="Data"> Current: {{  CurrentData  }}</div>
+          <div class="Data"> Voltage: {{  VoltageData  }}</div>
+        </div>
+        <div class="Column">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
