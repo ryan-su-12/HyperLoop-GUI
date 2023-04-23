@@ -1,15 +1,15 @@
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__, template_folder='templateFiles', static_folder='staticFiles')
-form_data = {'Velocity':0,'Acceleration':0,'Time': 0,
-             'DistanceTravelled':0, 'BatteryPercentage':0, 'Throttle':0,
+form_data = {'Velocity':0,'Acceleration':0,'Time': 0, 'DistanceTravelled':0, 
+             'BatteryPercentage':0, 'Throttle':0,
              'OutsideTemperature':0, 'Height':0, 'BatteryTemperature':100,
              'BrakePercentage':0, 'MotorTemperature':0, 'Current':0,
              'Voltage':0}
 
 @app.route('/')
 def home():
-    return render_template('Home.html', variable = form_data.get('Velocity'))
+    return render_template('Home.html', velocity1 = form_data.get('Velocity'))
 
 @app.route('/Electrical_Subsystem/')
 def Electrical_Subsystem():
@@ -17,11 +17,19 @@ def Electrical_Subsystem():
 
 @app.route('/Mechanical_Subsystem/')
 def Mechanical_Subsystem():
-    return render_template('Mechanical_Subsystems.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'), DistanceData = form_data.get('DistanceTravelled'))
+    return render_template('Mechanical_Subsystems.html', ThrottleData = form_data.get('Throttle'), BrakePercentageData = form_data.get('BrakePercentage'), MotorTemperatureData = form_data.get('MotorTemperature'))
 
 @app.route('/Input_Cases/')
 def Input_Cases():
     return render_template('Input_Cases.html')
+
+@app.route('/Basic_Data/')
+def Basic_Data():
+    return render_template('Basic_Data.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'), DistanceData = form_data.get('DistanceTravelled'))
+
+@app.route('/graphtesting/')
+def graphtesting():
+    return render_template('Graph_Tests.html')
 
 @app.route('/data/', methods = ['POST'])
 def data():

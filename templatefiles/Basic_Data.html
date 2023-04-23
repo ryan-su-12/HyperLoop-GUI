@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen's Hyperloop Basic Data</title>
+  <link rel="stylesheet" href="/staticFiles/basic_data.css">
+</head>
+<body>
+    <div class="navigation">
+        <a href="/">
+          <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
+        </a>
+      </div>
+    
+      <div class="container-fluid">
+        <div class="box">
+          <h1>Basic Data</h1>
+    
+          <div class="row">
+            <div class="Column">
+                <div class="Data"> Velocity: {{  VelocityData  }} m/s</div>
+                <div class="Data"> Acceleration: {{  AccelerationData  }} m/s^2</div>
+                <div class="Data"> Time: {{ TimeData }}</div>
+                <div class="Data"> Distance: {{ DistanceData }}</div>
+            </div>
+            <div class="Column">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
