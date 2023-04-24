@@ -31,14 +31,14 @@ def data():
         form_data['Acceleration'] = request.form['Acceleration']
         form_data['DistanceTravelled'] = request.form['DistanceTravelled']
         form_data['BatteryPercentage'] = request.form['BatteryPercentage']
-        form_data['Throttle'] = request.form['Throttle']
-
-        form_data['Height'] = request.form['Height']
-        form_data['BatteryTemperature'] = request.form['BatteryTemperature']
-        form_data['BrakePercentage'] = request.form['BrakePercentage']
-        form_data['MotorTemperature'] = request.form['MotorTemperature']
         form_data['Current'] = request.form['Current']
         form_data['Voltage'] = request.form['Voltage']
+        form_data['BatteryTemperature'] = request.form['BatteryTemperature']
+        form_data['Throttle'] = request.form['Throttle']
+        form_data['Height'] = request.form['Height']
+        form_data['BrakePercentage'] = request.form['BrakePercentage']
+        form_data['MotorTemperature'] = request.form['MotorTemperature']
+        
         return redirect(url_for('home')), form_data
 
 if __name__=='__main__':
