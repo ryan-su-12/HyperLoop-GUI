@@ -1,0 +1,117 @@
+body {
+  font-size: 16px;
+  color: white;
+  background-color: #040720;
+  font-family: Helvetica, sans-serif;
+}
+p {
+  color: white;
+  text-align: right;
+}
+* {
+  box-sizing: border-box;
+}
+
+.navigation {
+  margin: auto;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+
+.logo-img {
+  width: 50%;
+  height: auto;
+  align-items: center;
+  position: relative;
+  transform: translate(11%, 0%); 
+}
+
+button {
+  float: left;
+  width: 30vw;
+  height: 40vh;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ .BasicData{
+  float: left;
+  width: 22vw;
+  height: 20vh;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  background-color: #CCE5FF;
+}
+
+.BasicData:hover{
+  transform: translateY(-10px);
+  background-color: #000;
+  transition: 0.3s;
+  color: white;
+}
+
+.Data button{
+  background-color: #FFD700;
+  transition: 0.2s;
+}
+
+.MechSubsys button{
+  background-color: #8B0000;
+}
+
+.ElecSubsys button{
+  background-color: #8B0000;
+}
+
+.Data button:hover{
+  background-color: #ffbf00;
+}
+
+.MechSubsys button:hover{
+  background-color: #ff726f;
+  transition: 0.4s;
+}
+
+.ElecSubsys button:hover{
+  background-color: #ff726f;
+  transition: 0.4s
+}
+
+.clock {
+  float: right;
+  background-color: #8B0000;
+  width: 8vw;
+  height: 8vh;
+  margin-top: 5vw;
+  margin-right: 3vw;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#time {
+  color: black;
+}

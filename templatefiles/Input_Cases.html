@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen's Hyperloop Inputter</title>
+    <link rel="stylesheet" href="/staticFiles/inputs.css">
+</head> 
+<body>
+    <div class="navigation">
+        <a href="/">
+          <img class="logo-img" src="{{url_for('static', filename='img/logo.png')}}" alt="Queens Hyperloop Logo">
+        </a>
+      </div>
+    
+    <div class="container-fluid">
+      <div class="box">
+        <h1>Input Cases</h1>
+        <div class="row">
+          <form action="/data" method = "POST">
+          <div class="Column">
+            <div class="Header">Basic Data</div>
+                <p>Time <input type = "text" name = "Time" /></p>
+                <p>Velocity <input type = "text" name = "Velocity" /></p>
+                <p>Acceleration <input type = "text" name = "Acceleration" /></p>
+                <p>Distance <input type = "text" name = "DistanceTravelled" /></p>
+          </div>
+          <div class="Column">
+            <div class="Header">Mechanical Data</div>
+                <p>Throttle <input type = "text" name = "Throttle" /></p>
+                <p>Height <input type = "text" name = "Height" /></p>
+                <p>Motor Temp<input type = "text" name = "MotorTemperature" /></p>
+                <p>Brake % <input type = "text" name = "BrakePercentage" /></p>
+          </div>
+          <div class="Column">
+            <div class="Header">Electrical Data</div>
+                <p>Battery Temp<input type = "text" name = "BatteryTemperature" /></p>
+                <p>Current <input type = "text" name = "Current" /></p>
+                <p>Voltage <input type = "text" name = "Voltage" /></p>
+                <p>Battery % <input type = "text" name = "BatteryPercentage" /></p>
+          </div>
+          <div><input class="SubmitButton" type = "submit" value = "Submit"/></div>
+          </form>
+        </div>
+      </div>  
+    </div>
+</body>
+</html> 
