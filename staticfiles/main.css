@@ -43,16 +43,34 @@ button {
   text-transform: uppercase;
 }
 
-button .BasicData {
+ .BasicData{
   float: left;
-  width: 10vw;
-  height: 10vh;
+  width: 22vw;
+  height: 20vh;
+  margin-top: 3vw;
+  margin-left: 2vw;
+  border: 5px solid #FFF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  font-size: 2em;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #CCE5FF;
+}
+
+.BasicData:hover{
+  transform: translateY(-10px);
+  background-color: #000;
+  transition: 0.3s;
+  color: white;
 }
 
 .Data button{
   background-color: #FFD700;
+  transition: 0.2s;
 }
 
 .MechSubsys button{
@@ -68,15 +86,13 @@ button .BasicData {
 }
 
 .MechSubsys button:hover{
-  background-color: #8b1900;
+  background-color: #ff726f;
+  transition: 0.4s;
 }
 
 .ElecSubsys button:hover{
-  background-color: #8b1900;
-}
-
-.BasicData button:hover{
-  background-color: #CCCCFF;
+  background-color: #ff726f;
+  transition: 0.4s
 }
 
 .clock {

@@ -29,14 +29,17 @@
           <button class="ButtonArea">Electrical Subsystem</button>
         </a>
       </div>
-      <a class="Graphs" href="{{ url_for('graphtesting') }}" title="Go to Electrical Subsystems">
-        <button class="ButtonArea">Graphs</button>
-      </a>
-
+      <div class="container-fluid">
+        <div class="row">
+        <div class ="BasicData"> <h4> Velocity: {{  VelocityData  }} m/s </h4>
+        </div>
+        <div class ="BasicData"> <h4> Acceleration: {{  AccelerationData  }} m/s^2 </h4>
+        </div>
+        <div class ="BasicData"> <h4> Distance: {{  DistanceData  }} km </h4>
+        </div>
+        <div class ="BasicData"> <h4> Time: {{  TimeData  }} s </h4>
+        </div>
     </div>
 
-    <div style="float: left;">
-      Velocity: The velocity is {{  velocity1  }}
-    </div>
 </body>
 </html>

@@ -9,7 +9,7 @@ form_data = {'Velocity':0,'Acceleration':0,'Time': 0, 'DistanceTravelled':0,
 
 @app.route('/')
 def home():
-    return render_template('Home.html', velocity1 = form_data.get('Velocity'))
+    return render_template('Home.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'), DistanceData = form_data.get('DistanceTravelled'))
 
 @app.route('/Electrical_Subsystem/')
 def Electrical_Subsystem():
@@ -17,19 +17,11 @@ def Electrical_Subsystem():
 
 @app.route('/Mechanical_Subsystem/')
 def Mechanical_Subsystem():
-    return render_template('Mechanical_Subsystems.html', ThrottleData = form_data.get('Throttle'), BrakePercentageData = form_data.get('BrakePercentage'), MotorTemperatureData = form_data.get('MotorTemperature'))
+    return render_template('Mechanical_Subsystems.html', ThrottleData = form_data.get('Throttle'), BrakePercentageData = form_data.get('BrakePercentage'), MotorTemperatureData = form_data.get('MotorTemperature'), HeightData = form_data.get('Height'))
 
 @app.route('/Input_Cases/')
 def Input_Cases():
     return render_template('Input_Cases.html')
-
-@app.route('/Basic_Data/')
-def Basic_Data():
-    return render_template('Basic_Data.html', VelocityData = form_data.get('Velocity'), TimeData = form_data.get('Time'), AccelerationData = form_data.get('Acceleration'), DistanceData = form_data.get('DistanceTravelled'))
-
-@app.route('/graphtesting/')
-def graphtesting():
-    return render_template('Graph_Tests.html')
 
 @app.route('/data/', methods = ['POST'])
 def data():
@@ -39,12 +31,12 @@ def data():
         form_data['Acceleration'] = request.form['Acceleration']
         form_data['DistanceTravelled'] = request.form['DistanceTravelled']
         form_data['BatteryPercentage'] = request.form['BatteryPercentage']
-        #form_data['Throttle'] = request.form['Throttle']
+        form_data['Throttle'] = request.form['Throttle']
 
-        #form_data['Height'] = request.form['Height']
+        form_data['Height'] = request.form['Height']
         form_data['BatteryTemperature'] = request.form['BatteryTemperature']
-        #form_data['BrakePercentage'] = request.form['BrakePercentage']
-        #form_data['MotorTemperature'] = request.form['MotorTemperature']
+        form_data['BrakePercentage'] = request.form['BrakePercentage']
+        form_data['MotorTemperature'] = request.form['MotorTemperature']
         form_data['Current'] = request.form['Current']
         form_data['Voltage'] = request.form['Voltage']
         return redirect(url_for('home')), form_data
