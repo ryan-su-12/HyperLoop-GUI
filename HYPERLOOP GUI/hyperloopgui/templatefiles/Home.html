@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen's Hyperloop Homepage</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="/staticFiles/dynamicTime.js"></script>
+</head>
+
+<body>
+    <div class="navigation">
+        <img class="logo-img" src="logo.png" alt="Queens Hyperloop Logo">
+        <div class="clock">
+          <p id="time"></p>
+        </div> 
+    </div>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <a class="MechSubsys" href="{{ url_for('Mechanical_Subsystem') }}" title="Go to Mechanical Subystems">
+          <button class="ButtonArea">Mechanical Subsystem</button>
+        </a>
+        <a class="Data" href="{{ url_for('Input_Cases') }}" title="Go to Test Cases">
+          <button class="ButtonArea">Input Cases</button> 
+          </a>
+        <a class="ElecSubsys" href="{{ url_for('Electrical_Subsystem') }}" title="Go to Electrical Subsystems">
+          <button class="ButtonArea">Electrical Subsystem</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class ="BasicData"> <h4> Velocity: {{  VelocityData  }} m/s</h4></div>
+        <div class ="BasicData"> <h4> Acceleration: {{  AccelerationData  }} m/s^2</h4></div>
+        <div class ="BasicData"> <h4> Distance: {{  DistanceData  }} m</h4></div>
+        <div class ="BasicData"> <h4> Time: {{  TimeData  }} s</h4></div>
+      </div>
+    </div>
+
+</body>
+</html>
